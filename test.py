@@ -5,8 +5,8 @@ from eval import eval_net
 from unet import UNet
 from utils import get_ids, get_imgs_and_masks, batch
 
-dir_img = '/content/Pytorch-UNet/img/'
-dir_mask = '/content/'
+dir_img = '/content/Pytorch-UNet/result/test'
+dir_mask = '/content/Pytorch-UNet/result/test_y'
 
 def get_result(net, gpu=False):
     ids = get_ids(dir_img)

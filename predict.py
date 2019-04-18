@@ -71,9 +71,9 @@ def predict_img(net,
 
     # full_mask = merge_masks(left_mask_np, right_mask_np, img_width)
 
-    # if use_dense_crf:
-    #     # full_mask = dense_crf(np.array(full_img).astype(np.uint8), full_mask)
-    #     mask = dense_crf(np.array(full_img).astype(np.uint8), mask)
+    if use_dense_crf:
+        # full_mask = dense_crf(np.array(full_img).astype(np.uint8), full_mask)
+        mask = dense_crf(np.array(full_img).astype(np.uint8), mask)
 
     return mask > out_threshold
 
