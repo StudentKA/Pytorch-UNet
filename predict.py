@@ -154,6 +154,7 @@ if __name__ == "__main__":
         print("\nPredicting image {} ...".format(fn))
 
         img = Image.open(fn)
+        # img = resize_and_crop(img, scale=scale)
         if img.size[0] < img.size[1]:
             print("Error: image height larger than the width")
 
