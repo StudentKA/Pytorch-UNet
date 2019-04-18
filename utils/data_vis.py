@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 
+
 def plot_img_and_mask(img, mask):
     fig = plt.figure()
     a = fig.add_subplot(1, 2, 1)
@@ -10,3 +11,4 @@ def plot_img_and_mask(img, mask):
     b.set_title('Output mask')
     plt.imshow(mask)
     plt.show()
+    plt.savefig('/content/testplot.jpg')
