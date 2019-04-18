@@ -11,4 +11,4 @@ def plot_img_and_mask(img, mask):
     b.set_title('Output mask')
     plt.imshow(mask)
     plt.show()
-    plt.savefig('/content/testplot.jpg')
+    plt.savefig('/content/testplot.png')
