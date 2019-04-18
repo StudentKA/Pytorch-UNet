@@ -8,7 +8,7 @@ def dense_crf(img, output_probs):
     output_probs = np.expand_dims(output_probs, 0)
     output_probs = np.append(1 - output_probs, output_probs, axis=0)
 
-    d = dcrf.DenseCRF2D(w, h, 2)
+    # d = dcrf.DenseCRF2D(w, h, 2)
     U = -np.log(output_probs)
     U = U.reshape((2, -1))
     U = np.ascontiguousarray(U)
