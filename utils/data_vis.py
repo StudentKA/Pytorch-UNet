@@ -1,5 +1,6 @@
+# %matplotlib inline
 import matplotlib.pyplot as plt
-%matplotlib inline
+
 
 def plot_img_and_mask(img, mask):
     fig = plt.figure()
