@@ -6,7 +6,7 @@ from unet import UNet
 from utils import get_ids, get_imgs_and_masks, batch
 
 dir_img = '/content/out'
-dir_mask = '/content/img'
+dir_mask = '/content/'
 
 def get_result(net, gpu=False):
     ids = get_ids(dir_img)
