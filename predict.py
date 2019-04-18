@@ -84,7 +84,7 @@ def get_args():
     parser.add_argument('--model', '-m', default='MODEL.pth',
                         metavar='FILE',
                         help="Specify the file in which is stored the model"
-                             " (default : '/content/MODEL.pth')")
+                             " (default : '/content/Pytorch-UNet/MODEL.pth')")
     parser.add_argument('--input', '-i', metavar='INPUT', nargs='+',
                         help='filenames of input images', required=True)
 
